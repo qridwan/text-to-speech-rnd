@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="icons/text-to-speech.png" type="image/x-icon">
+
+	<title>Web Speechsynthesis - TTS</title>
+</head>
+<!-- loding function for mobile devices -->
+
+<body onload="textToAudio()">
+	<header>
+		<div class="header-item">
+			<h1 class="title">Web Speechsynthesis - TTS</h1>
+			<div class="header-menu">
+
+			</div>
+			<img src="icons/bars-solid.svg" id="menu-icon" class="menu-icon" alt="menu" />
+		</div>
+	</header>
+	<div class="message">
+		<h1>RnD for Text to Speech</h1>
+	</div>
+	<div class="menu-mobile" id="menu-mobile">
+
+	</div>
+
+	<main>
+		<div class="container">
+			<div class="form">
+				<div>
+					<h2 class="vt">Select Voice</h2>
+					<select id="voices" class="form-select bg-secondary text-light"></select>
+				</div>
+				<div>
+					<h2 class="vt">Message</h2>
+					<textarea id="input-text" placeholder="Enter Text" cols="40%" rows="11%">Hello world! Your Code is 5 4 3 2 1
+					</textarea>
+
+				</div>
+			</div>
+
+			<div>
+				<div>
+					<h2 class="inputs">Volume</h2>
+					<input type="range" min="1" max="10" value="5" id="volumeRange">
+				</div>
+
+				<div>
+					<h2 class="inputs">Rate</h2>
+					<input type="range" min="1" max="10" value="5" id="rateRange">
+				</div>
+
+				<div>
+					<h2 class="inputs">Pitch</h2>
+					<input type="range" min="1" max="20" value="10" id="pitchRange">
+				</div>
+
+				<div class="set">
+					<button class="final" onclick="textToAudio()">Speech</button>
+					<button class="final" onclick="reset()">Reset</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="contribute">
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer">
+			<p>Created with ❤️ by <a href="https://qridwan.com" target="_blank">Ridwan</a></p>
+			<script>
+				// if document ready use dom no jquery
+
+			</script>
+
+			<script src="script.js"></script>
+
+</body>
+
+</html>
